@@ -54,7 +54,7 @@ static int _InitWindow(_THIS, SDL_Window *window) {
     
     if (window->flags & SDL_WINDOW_FULLSCREEN) {
         /* TODO: Add support for this flag */
-        printf(__FILE__": %d!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",__LINE__);
+        printf(__FILE_NAME__": %d!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",__LINE__);
     }
     if (window->flags & SDL_WINDOW_OPENGL) {
         /* TODO: Add support for this flag */

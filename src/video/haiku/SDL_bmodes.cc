@@ -262,7 +262,7 @@ int HAIKU_SetDisplayMode(_THIS, SDL_VideoDisplay *display, SDL_DisplayMode *mode
     /* Get the current screen */
     BScreen bscreen;
     if (!bscreen.IsValid()) {
-        printf(__FILE__": %d - ERROR: BAD SCREEN\n", __LINE__);
+        printf(__FILE_NAME__": %d - ERROR: BAD SCREEN\n", __LINE__);
     }
 
     /* Set the mode using the driver data */

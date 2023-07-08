@@ -95,8 +95,8 @@ static SDL_INLINE DFBResult sdl_dfb_check(DFBResult ret, const char *src_file, i
     return ret;
 }
 
-#define SDL_DFB_CHECK(x...) do { sdl_dfb_check( x, __FILE__, __LINE__); } while (0)
-#define SDL_DFB_CHECKERR(x...) do { if ( sdl_dfb_check( x, __FILE__, __LINE__) != DFB_OK ) goto error; } while (0)
+#define SDL_DFB_CHECK(x...) do { sdl_dfb_check( x, __FILE_NAME__, __LINE__); } while (0)
+#define SDL_DFB_CHECKERR(x...) do { if ( sdl_dfb_check( x, __FILE_NAME__, __LINE__) != DFB_OK ) goto error; } while (0)
 
 #else
 

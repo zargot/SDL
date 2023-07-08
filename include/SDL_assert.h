@@ -78,7 +78,7 @@ assert can have unique static variables associated with it.
 #else
 #   define SDL_FUNCTION "???"
 #endif
-#define SDL_FILE    __FILE__
+#define SDL_FILE    __FILE_NAME__
 #define SDL_LINE    __LINE__
 
 /*
@@ -320,3 +320,4 @@ extern DECLSPEC void SDLCALL SDL_ResetAssertionReport(void);
 #endif /* SDL_assert_h_ */
 
 /* vi: set ts=4 sw=4 expandtab: */
+
